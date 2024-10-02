@@ -1,0 +1,33 @@
+.previous-guess {
+    display: flex;
+    justify-content: center;
+}
+
+.previous-guess__letter {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* Ensures vertical centering for both */
+    text-align: center;
+    margin: 0 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    color: white; /* White text on colored backgrounds for previous guesses */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This makes sure the letters are vertically aligned */
+}
+
+/* Previous guess specific colors */
+.previous-guess__letter--correct {
+    background-color: green;
+}
+
+.previous-guess__letter--present {
+    background-color: gold;
+}
+
+.previous-guess__letter--absent {
+    background-color: lightgray;
+}
