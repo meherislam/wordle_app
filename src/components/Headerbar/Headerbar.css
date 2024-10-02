@@ -1,0 +1,139 @@
+.popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background overlay for more contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out; /* Smoother transition */
+}
+
+/* Popup box */
+.popup {
+    background-color: #fff;
+    padding: 30px 40px; /* More padding for spacious look */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Softer shadow for more depth */
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling */
+    transform: scale(1); /* Starting scale */
+}
+
+/* Add animation for popup */
+.popupContainer .popup {
+    animation: popupAnimation 0.3s ease-in-out;
+}
+
+@keyframes popupAnimation {
+    0% {
+        transform: scale(0.8); /* Slight zoom out */
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1); /* Zoom in */
+        opacity: 1;
+    }
+}
+
+/* Header of the popup */
+.popup-header {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Custom select box */
+.custom-select {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    transition: border-color 0.2s;
+}
+
+.custom-select:focus {
+    border-color: #6200ea; /* Focus color */
+}
+
+/* Toggle hard mode switch */
+.toggle-container {
+    margin-top: 20px;
+}
+
+.toggle-label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.toggle-checkbox {
+    margin-right: 10px;
+    transform: scale(1.3); /* Larger checkbox */
+}
+
+/* Buttons */
+.popup-button, .closeButton, .switchButton {
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #6200ea; /* Modern purple color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.popup-button:hover, .closeButton:hover, .switchButton:hover {
+    background-color: #4b00b3; /* Darker hover */
+}
+
+/* Game list item styles */
+.gameList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.listItem:hover {
+    background-color: #eee; /* Slight hover effect */
+}
+
+.gameInfo {
+    font-size: 16px;
+}
+
+.switchButton {
+    background-color: #03a9f4; /* Blue button for switch */
+}
+
+.switchButton:hover {
+    background-color: #0288d1; /* Hover color for switch */
+}

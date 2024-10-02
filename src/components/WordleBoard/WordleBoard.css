@@ -1,0 +1,11 @@
+.wordleBoardLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Adjusted space between components (Word grid and keyboard) */
+    padding: 10px 15px;
+}
+
+.keyboardWrapper {
+    margin-top: 20px; /* Adds spacing only between the word grid and the keyboard */
+}
