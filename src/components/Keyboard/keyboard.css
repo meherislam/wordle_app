@@ -2,21 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Increase gap between rows */
+    gap: 15px;
 }
 
 .keyboard-row {
     display: flex;
-    gap: 10px; /* Increase gap between keys */
+    gap: 10px;
 }
 
 .key {
-    width: 60px; /* Increased width */
-    height: 60px; /* Increased height */
+    width: 60px;
+    height: 60px;
     background-color: #e0e0e0;
     border: none;
     border-radius: 5px;
-    font-size: 20px; /* Increased font size */
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -30,21 +30,21 @@
 }
 
 .special-key {
-    width: 90px; /* Increased width for special keys like Backspace and Enter */
+    width: 90px;
 }
 
 .key.correct {
-    background-color: #6aaa64; /* Green for correct letters */
+    background-color: #6aaa64;
     color: white;
 }
 
 .key.present {
-    background-color: #c9b458; /* Yellow for present letters */
+    background-color: #c9b458;
     color: white;
 }
 
 .key.absent {
-    background-color: #787c7e; /* Gray for absent letters */
+    background-color: #787c7e;
     color: white;
 }
 
